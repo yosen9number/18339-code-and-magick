@@ -11,12 +11,6 @@ function getMessage(a, b) {
   else if (typeof a == 'number') {
     message = 'Я прыгнул на '+ a * 100 + ' сантиметров';
   }
-  else if (typeof a == 'object') {
-    var result = a.reduce(function(sum, current){
-      return sum + current;
-    });
-    message = 'Я прошел ' + result + ' шагов';
-  }
   else if (typeof a == 'object' && typeof b == 'object') {
     for (var i = 0; i < a.length; i++ ) {
       a[i] = a[i] * b[i];
@@ -25,6 +19,12 @@ function getMessage(a, b) {
       return sum + current;
     });
     message = 'Я прошел ' + length + ' метров';
+  }
+  else if (typeof a == 'object') {
+    var result = a.reduce(function(sum, current){
+      return sum + current;
+    });
+    message = 'Я прошел ' + result + ' шагов';
   }
   return message;
 }
