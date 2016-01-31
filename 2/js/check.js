@@ -18,7 +18,7 @@ function getMessage(a, b) {
     var length = a.reduce(function(sum, current){
       return sum + current;
     });
-    message = 'Я прошел ' + length + ' метров';
+    message = 'Я прошёл ' + length + ' метров';
   }
   else if (typeof a == 'object') {
     var result = a.reduce(function(sum, current){
