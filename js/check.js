@@ -24,7 +24,7 @@ function getMessage(a, b) {
     var result = a.reduce(function(sum, current){
       return sum + current;
     });
-    message = 'Я прошел ' + result + ' шагов';
+    message = 'Я прошёл ' + result + ' шагов';
   }
   return message;
 }
