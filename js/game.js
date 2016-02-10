@@ -392,6 +392,35 @@
           console.log('welcome to the game! Press Space to start');
           break;
       }
+      this.ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+      this.ctx.moveTo(330, 100);
+      this.ctx.lineTo(610, 100);
+      this.ctx.lineTo(610, 230);
+      this.ctx.lineTo(310, 250);
+      this.ctx.fill();
+
+      this.ctx.fillStyle = '#FFFFFF';
+      this.ctx.moveTo(320, 90);
+      this.ctx.lineTo(600, 90);
+      this.ctx.lineTo(600, 220);
+      this.ctx.lineTo(300, 240);
+      this.ctx.fill();
+      this.ctx.font = '16px PT Mono';
+      messageFormer(this.ctx, message, 3200, 90);
+
+
+      function messageFormer(ctx, msg, x, y) {
+        for (var i = 0; i < msg.length; i++) {
+          if (i === 0) {
+            ctx.strokeText(msg[i], x + 10, y + 10 + (i + 1) * 18);
+          } else if (i < msg.length - 1) {
+            ctx.strokeText(msg[i], x + 10, y + 20 + (i + 1) * 18);
+          } else {
+            ctx.strokeText(msg[i], x + 10, y + 30 + (i + 1) * 18);
+          }
+        }
+      }
+
     },
 
     /**
