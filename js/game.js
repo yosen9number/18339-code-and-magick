@@ -400,6 +400,7 @@
       this.ctx.fill();
 
       this.ctx.fillStyle = '#FFFFFF';
+      this.ctx.beginPath();
       this.ctx.moveTo(320, 90);
       this.ctx.lineTo(600, 90);
       this.ctx.lineTo(600, 220);
