@@ -392,6 +392,20 @@
           console.log('welcome to the game! Press Space to start');
           break;
       }
+      this.ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+      this.ctx.moveTo(330, 100);
+      this.ctx.lineTo(610, 100);
+      this.ctx.lineTo(610, 230);
+      this.ctx.lineTo(310, 250);
+      this.ctx.fill();
+
+      this.ctx.fillStyle = '#FFFFFF';
+      this.ctx.moveTo(320, 90);
+      this.ctx.lineTo(600, 90);
+      this.ctx.lineTo(600, 220);
+      this.ctx.lineTo(300, 240);
+      this.ctx.fill();
+      this.ctx.font = '16px PT Mono';
     },
 
     /**
