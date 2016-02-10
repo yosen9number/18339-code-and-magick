@@ -400,12 +400,14 @@
       this.ctx.fill();
 
       this.ctx.fillStyle = '#FFFFFF';
+      this.ctx.beginPath();
       this.ctx.moveTo(320, 90);
       this.ctx.lineTo(600, 90);
       this.ctx.lineTo(600, 220);
       this.ctx.lineTo(300, 240);
       this.ctx.fill();
       this.ctx.font = '16px PT Mono';
+
     },
 
     /**
